@@ -45,9 +45,9 @@ window.addEventListener('scroll', scrollActive)
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'bottom',
-    distance: '60px',
-    duration: 200,
-    delay: 20,
+    distance: '10px',
+    duration: 100,
+    delay: 0,
 //     reset: true
 });
 

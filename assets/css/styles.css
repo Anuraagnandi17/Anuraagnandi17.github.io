@@ -1,22 +1,20 @@
-/*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  /*===== Colores =====*/
+  /*===== Colors =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: 355;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
+  --hue-color: 0;
+  --first-color: hsl(var(--hue-color), 0%, 50%);
+  --second-color: hsl(var(--hue-color), 0%, 15%);
+  /*=====FOnt =====*/
   --body-font: "Times New Roman", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
+  /*===== Margins =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
@@ -221,20 +219,6 @@ img {
   width: 360px;
 }
 
-/*BUTTONS*/
-.button {
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
-  padding: 0.75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: 0.5rem;
-  transition: 0.3s;
-}
-.button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
-}
-
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
@@ -291,17 +275,20 @@ img {
   border-radius: 0.5rem;
   z-index: var(--z-back);
 }
-.skills__html {
+.skills__cpp {
   width: 90%;
 }
-.skills__css {
-  width: 85%;
+.skills__c {
+  width: 80%;
+}
+.skills__py {
+  width: 75%;
+}
+.skills__ML {
+  width: 75%;
 }
 .skills__js {
   width: 65%;
-}
-.skills__ux {
-  width: 85%;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -323,7 +310,11 @@ img {
 }
 .workexp__text{
   margin-bottom: var(--mb-4);
-  text-align: center;
+  max-width: 600px; 
+  margin: 0 auto;
+  padding: 15px;
+  text-align: justify;
+  line-height: 1.5; 
 }
 
 /* ===== WORK =====*/
@@ -338,7 +329,7 @@ img {
   display: inline-block;
 }
 .work__img img {
-  transition: 1s;
+  transition: 0.5s;
 }
 .work__img::after {
   content: attr(title);
@@ -367,17 +358,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Adjust the gap between icons as needed */
+  gap: 15px; 
 }
 
 .home__social-icon {
-  font-size: 40px; /* Adjust the font size of the icons as needed */
-  color: #333; /* Adjust the color of the icons as needed */
+  font-size: 40px; 
+  color: #333; 
   text-decoration: none;
 }
 
 .home__social-icon:hover {
-  color: red; /* Adjust the hover color as needed */
+  color: blue; 
 }
 
 /* ===== FOOTER =====*/
@@ -394,14 +385,6 @@ img {
 }
 .footer__social {
   margin-bottom: var(--mb-4);
-}
-.footer__icon {
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0 var(--mb-2);
-}
-.footer__copy {
-  font-size: var(--smaller-font-size);
 }
 
 /* ===== MEDIA QUERIES=====*/
