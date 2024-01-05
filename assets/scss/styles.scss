@@ -1,6 +1,3 @@
-/*===== GOOGLE FONTS =====*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
 /*===== VARIABLES CSS =====*/
 :root{
     --header-height: 3rem;
@@ -9,9 +6,9 @@
     /*===== Colores =====*/
     /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
     /* HSL color mode */
-    --hue-color: 224;
-    --first-color: hsl(var(--hue-color), 89%, 60%);
-    --second-color: hsl(var(--hue-color), 56%, 12%);
+    --hue-color: 0;
+    --first-color: hsl(var(--hue-color), 0%, 50%);
+    --second-color: hsl(var(--hue-color), 0%, 15%);
 
     /*===== Fuente y tipografia =====*/
     --body-font: 'New Times Roman', sans-serif;
